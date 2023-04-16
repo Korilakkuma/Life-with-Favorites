@@ -58,6 +58,7 @@ h1 {
   font-size: 28px;
   font-weight: normal;
   color: var(--main);
+  animation: header-animation 1.2s ease-out 1 normal 0s forwards;
 }
 
 header h2 {
@@ -87,4 +88,9 @@ footer {
 
 footer small {
   font-size: 14px;
+}
+
+@keyframes header-animation {
+    0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
