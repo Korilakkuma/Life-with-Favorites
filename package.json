@@ -2,7 +2,7 @@
   "name": "",
   "version": "0.0.0",
   "engines": {
-    "node": ">=16.0.0 <=18.15.x"
+    "node": ">=16.0.0 <=18.16.x"
   },
   "description": "",
   "main": "docs/index.html",
