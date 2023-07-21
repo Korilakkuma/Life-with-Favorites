@@ -102,6 +102,8 @@ footer small {
 }
 
 @keyframes header-animation {
+  /* stylelint-disable  declaration-block-single-line-max-declarations */
     0% { opacity: 0; transform: translateY(-20px); }
   100% { opacity: 1; transform: translateY(0); }
+  /* stylelint-enable  declaration-block-single-line-max-declarations */
 }
