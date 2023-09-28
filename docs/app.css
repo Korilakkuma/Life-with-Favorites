@@ -95,6 +95,15 @@ aside {
   background-color: var(--main);
 }
 
+ul {
+  padding: 0;
+  margin: 0 0 0 16px;
+}
+
+ul > li {
+  margin: 4px 0;
+}
+
 footer {
   padding: 24px 0;
   color: var(--main);
