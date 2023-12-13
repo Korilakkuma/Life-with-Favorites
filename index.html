@@ -48,19 +48,22 @@
       <section>
         <h2>Official Profile</h2>
         <p>
-          See <a href="https://gist.github.com/Korilakkuma/ae560d871dd41c71f303013e08f5fc07" target="_blank" rel="noopener noreferrer">GitHub gist</a>
+          公式の (肩書きの) <a href="https://gist.github.com/Korilakkuma/ae560d871dd41c71f303013e08f5fc07" target="_blank" rel="noopener noreferrer">プロフィール (GitHub Gist)</a> です.
         </p>
       </section>
       <section>
         <h2>Life Works 💖💻🎸🎹🎵</h2>
         <p>
-          Computer Science, Mathematics,<br  />
-          Audio Programming and Music.
+          コンピュータサイエンス, オーディオ信号処理,
+          オーディオプログラミング, 音楽 (ギターとピアノ, ジャンルはこだわりなく気に入ったら聴いたり, 弾いたり ...).
+        </p>
+        <p>
+          仕事と趣味の境目があまりない生き方なので, 「ライフワーク」とあえて呼んでいます.
         </p>
         <h2>Portfolios</h2>
-        <ul class="portfolio-grid">
+        <ul class="portfolios">
           <li><a href="https://xsound.jp" target="_blank" rel="noopener noreferrer" class="image-link"><img src="images/xsound-social-preview.png" alt="XSound - Powerful Audio Features Easily ! -" width="225" height="112" loading="lazy" /></a></li>
-          <li><a href="https://xsound.app" target="_blank" rel="noopener noreferrer" class="image-link"><img src="images/xsound-icon.png" alt="XSound.app | Web Music Application by XSound" width="80" height="80" loading="lazy" /></a></li>
+          <li><a href="https://xsound.app" target="_blank" rel="noopener noreferrer" class="image-link"><img src="images/xsound-icon.png" alt="XSound.app | Web Music Application by XSound" width="84" height="84" loading="lazy" /></a></li>
           <li>
             <a href="https://github.com/Korilakkuma" target="_blank" rel="noopener noreferrer" class="image-link">
               <img src="images/github-icon.png" alt="" width="60" height="60" loading="lazy" />
@@ -70,9 +73,29 @@
           <li><a href="https://www.youtube.com/@rilakkuma3xjapan" target="_blank" rel="noopener noreferrer" class="image-link"><img src="images/youtube-logo.png" alt="YouTube" width="199" height="45" loading="lazy" /></a></li>
         </ul>
       </section>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          当サイトやポートフォリオに関する感想・お問い合わせなどをいただける場合は, 下記フォームから送信してください.
+          返信を必要とする場合は, 本文に返信先 (メールアドレス, SNS アカウントなど) を記載してください.
+          お仕事の依頼など, 金銭の契約となる依頼は受けつけていないです. トラブルを避けるためにご理解ください (その場合, 原則, 返信も致しません).
+        </p>
+        <form id="form">
+          <dl>
+            <dt><label for="text-subject">メール件名</label><span id="number-of-subject-chars">0</span><span>文字入力</span></dt>
+            <dd><input type="text" id="text-subject" placeholder="メール件名を入力してください (50 文字以内)" /></dd>
+            <dt><label for="textarea-body">メール本文</label><span id="number-of-body-chars">0</span><span>文字入力</span></dt>
+            <dd><textarea id="textarea-body" placeholder="メール本文を入力してください (1000 文字以内)"></textarea></dd>
+          </dl>
+          <button type="submit" id="submit-button">送信する</button>
+          <div id="result"></div>
+        </form>
+      </section>
+      <!--
       <article>
         <h2>3 月 22 日</h2>
       </article>
+      -->
     </main>
     <!--
     <aside>
@@ -91,7 +114,8 @@
     </aside>
     -->
     <footer>
-      <small>Copyright (c) 2011 Tomohiro IKEDA</small>
+      <small>Copyright (c) 2011 - 2023 Tomohiro IKEDA</small>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
