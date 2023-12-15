@@ -9,6 +9,8 @@ const divElement      = document.getElementById('result');
 const spanElementForSubject = document.getElementById('number-of-subject-chars');
 const spanElementForBody    = document.getElementById('number-of-body-chars');
 
+const spanElementForCurrentYear = document.getElementById('current-year');
+
 inputElement.addEventListener('input', (event) => {
   const numberOfChars = event.currentTarget.value.trim().length;
 
@@ -100,3 +102,7 @@ formElement.addEventListener('submit', async (event) => {
 
   buttonElement.removeAttribute('disabled');
 });
+
+const date = new Date();
+
+spanElementForCurrentYear.textContent = date.getFullYear();
