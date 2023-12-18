@@ -11,6 +11,8 @@ const spanElementForBody    = document.getElementById('number-of-body-chars');
 
 const spanElementForCurrentYear = document.getElementById('current-year');
 
+const anchorElementToYouTube = document.querySelector('a[href="https://www.youtube.com/@rilakkuma3xjapan"]');
+
 inputElement.addEventListener('input', (event) => {
   const numberOfChars = event.currentTarget.value.trim().length;
 
@@ -106,3 +108,7 @@ formElement.addEventListener('submit', async (event) => {
 const date = new Date();
 
 spanElementForCurrentYear.textContent = date.getFullYear();
+
+if (window.matchMedia('(max-width: 480px)').matches) {
+  anchorElementToYouTube.setAttribute('href', 'https://m.youtube.com/@rilakkuma3xjapan');
+}
