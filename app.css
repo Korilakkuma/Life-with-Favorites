@@ -240,9 +240,9 @@ ul > li {
 
 footer {
   padding: 24px 0;
-  color: var(--main);
+  color: var(--white);
   text-align: center;
-  background-color: var(--white);
+  background-color: var(--main);
 }
 
 footer small {
