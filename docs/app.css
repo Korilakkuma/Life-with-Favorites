@@ -225,6 +225,7 @@ textarea:focus {
 
 #result {
   margin: 12px 0;
+  color: var(--main);
 }
 
 aside {
