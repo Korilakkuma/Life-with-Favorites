@@ -20,6 +20,12 @@ body {
   background-color: var(--white);
 }
 
+noscript {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--main);
+}
+
 h2 {
   font-family: "Carrois Gothic SC", sans-serif;
   font-size: 24px;
