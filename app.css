@@ -146,6 +146,13 @@ p {
   list-style: none;
 }
 
+.portfolios > li> h3 {
+  padding: 0;
+  margin: 12px 0;
+  font-size: 18px;
+  font-weight: normal;
+}
+
 .portfolios iframe {
   max-width: 100%;
 }
