@@ -137,18 +137,31 @@ p {
   margin: 20px 24px;
 }
 
+ul {
+  padding: 0;
+  margin: 0 0 0 16px;
+}
+
+ul > li {
+  margin: 4px 0;
+}
+
 .portfolios {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 12px;
   padding: 0;
   margin: 0 24px;
   list-style: none;
 }
 
+.portfolios > li {
+  margin: 0;
+}
+
 .portfolios > li > h3 {
   padding: 0;
-  margin: 12px 0;
+  margin: 0 0 8px;
   font-size: 18px;
   font-weight: normal;
 }
@@ -254,15 +267,6 @@ textarea:focus {
 aside {
   color: var(--white);
   background-color: var(--main);
-}
-
-ul {
-  padding: 0;
-  margin: 0 0 0 16px;
-}
-
-ul > li {
-  margin: 4px 0;
 }
 
 footer {
