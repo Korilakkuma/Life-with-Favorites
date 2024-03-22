@@ -146,6 +146,24 @@ ul > li {
   margin: 4px 0;
 }
 
+footer {
+  padding: 24px 0;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--main);
+}
+
+footer p {
+  max-width: 100%;
+  padding: 0;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+footer small {
+  font-size: 14px;
+}
+
 .portfolios {
   display: flex;
   flex-wrap: wrap;
@@ -272,17 +290,6 @@ textarea:focus {
 aside {
   color: var(--white);
   background-color: var(--main);
-}
-
-footer {
-  padding: 24px 0;
-  color: var(--white);
-  text-align: center;
-  background-color: var(--main);
-}
-
-footer small {
-  font-size: 14px;
 }
 
 @keyframes header-animation {
