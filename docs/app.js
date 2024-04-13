@@ -106,12 +106,18 @@ formElement.addEventListener('submit', async (event) => {
   buttonElement.removeAttribute('disabled');
 });
 
-const dateNow = new Date();
-const date20150322 = new Date('2015/03/22');
-
-spanElementForElapsedDaysFrom20150322.textContent = Math.trunc((dateNow.getTime() - date20150322.getTime()) / (24 * 60 * 60 * 1000));
-spanElementForCurrentYear.textContent = dateNow.getFullYear();
-
 if (window.matchMedia('(max-width: 480px)').matches) {
   anchorElementToYouTube.setAttribute('href', 'https://m.youtube.com/@rilakkuma3xjapan');
 }
+
+const renderElapsedDays = () => {
+  const dateNow = new Date();
+  const date20150322 = new Date('2015/03/22');
+
+  spanElementForElapsedDaysFrom20150322.textContent = Math.trunc((dateNow.getTime() - date20150322.getTime()) / (24 * 60 * 60 * 1000));
+  spanElementForCurrentYear.textContent = dateNow.getFullYear();
+};
+
+renderElapsedDays();
+
+window.setInterval(renderElapsedDays, (60 * 1000));
