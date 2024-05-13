@@ -2,6 +2,7 @@
 
 const formElement     = document.getElementById('form');
 const inputElement    = document.getElementById('text-subject');
+const emailElement    = document.getElementById('email');
 const textareaElement = document.getElementById('textarea-body');
 const buttonElement   = document.getElementById('submit-button');
 const divElement      = document.getElementById('result');
@@ -42,6 +43,7 @@ formElement.addEventListener('submit', async (event) => {
   event.preventDefault();
 
   const subject = inputElement.value.trim();
+  const email   = emailElement.value.trim();
   const body    = textareaElement.value.trim();
 
   const errors = [];
@@ -79,7 +81,7 @@ formElement.addEventListener('submit', async (event) => {
   const params = new URLSearchParams();
 
   params.append('subject', subject);
-  params.append('body', body);
+  params.append('body', `${body}\n\nEmail: ${email}`);
 
   buttonElement.setAttribute('disabled', 'disabled');
 
@@ -93,6 +95,7 @@ formElement.addEventListener('submit', async (event) => {
     divElement.appendChild(text);
 
     inputElement.value    = '';
+    emailElement.value    = '';
     textareaElement.value = '';
 
     spanElementForSubject.textContent = '0';
