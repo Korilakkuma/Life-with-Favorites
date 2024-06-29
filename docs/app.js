@@ -15,6 +15,13 @@ const spanElementForCurrentYear = document.getElementById('current-year');
 
 const anchorElementToYouTube = document.querySelector('a[href="https://www.youtube.com/@rilakkuma3xjapan"]');
 
+const escapeHTML = (html) => {
+  return html
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;');
+};
+
 inputElement.addEventListener('input', (event) => {
   const numberOfChars = event.currentTarget.value.trim().length;
 
@@ -42,9 +49,9 @@ textareaElement.addEventListener('input', (event) => {
 formElement.addEventListener('submit', async (event) => {
   event.preventDefault();
 
-  const subject = inputElement.value.trim();
-  const email   = emailElement.value.trim();
-  const body    = textareaElement.value.trim();
+  const subject = escapeHTML(inputElement.value.trim());
+  const email   = escapeHTML(emailElement.value.trim());
+  const body    = escapeHTML(textareaElement.value.trim());
 
   const errors = [];
 
