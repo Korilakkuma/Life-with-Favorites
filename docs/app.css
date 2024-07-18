@@ -144,7 +144,7 @@ main > section:nth-of-type(even) > h2 {
 p {
   max-width: var(--max-width);
   padding: 0;
-  margin: 20px 24px;
+  margin: 8px 24px;
 }
 
 ul {
