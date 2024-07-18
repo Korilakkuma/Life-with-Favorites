@@ -13,7 +13,7 @@ const spanElementForBody    = document.getElementById('number-of-body-chars');
 const spanElementForElapsedDaysFrom20150322 = document.getElementById('elapsed-days-from-2015/03/22');
 const spanElementForCurrentYear = document.getElementById('current-year');
 
-const anchorElementToYouTube = document.querySelector('a[href="https://www.youtube.com/@rilakkuma3xjapan"]');
+const anchorElementToYouTube = document.querySelector('a[href="https://www.youtube.com/@rilakkuma3xjapan/videos"]');
 
 const escapeHTML = (html) => {
   return html
@@ -117,7 +117,7 @@ formElement.addEventListener('submit', async (event) => {
 });
 
 if (window.matchMedia('(max-width: 480px)').matches) {
-  anchorElementToYouTube.setAttribute('href', 'https://m.youtube.com/@rilakkuma3xjapan');
+  anchorElementToYouTube.setAttribute('href', 'https://m.youtube.com/@rilakkuma3xjapan/videos');
 }
 
 const renderElapsedDays = () => {
