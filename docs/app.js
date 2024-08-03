@@ -5,7 +5,6 @@ const inputElement    = document.getElementById('text-subject');
 const emailElement    = document.getElementById('email');
 const textareaElement = document.getElementById('textarea-body');
 const buttonElement   = document.getElementById('submit-button');
-const divElement      = document.getElementById('result');
 
 const spanElementForSubject = document.getElementById('number-of-subject-chars');
 const spanElementForBody    = document.getElementById('number-of-body-chars');
@@ -49,6 +48,10 @@ textareaElement.addEventListener('input', (event) => {
 formElement.addEventListener('submit', async (event) => {
   event.preventDefault();
 
+  if (formElement.lastElementChild.getAttribute('id') === 'result') {
+    formElement.removeChild(formElement.lastElementChild);
+  }
+
   const subject = escapeHTML(inputElement.value.trim());
   const email   = escapeHTML(emailElement.value.trim());
   const body    = escapeHTML(textareaElement.value.trim());
@@ -66,6 +69,12 @@ formElement.addEventListener('submit', async (event) => {
   } else if (body.length > 1000) {
     errors.push('メール本文は 1000 文字以内で入力してください.');
   }
+
+  const divElement = document.createElement('div');
+
+  divElement.setAttribute('id', 'result');
+
+  formElement.appendChild(divElement);
 
   if (errors.length > 0) {
     divElement.textContent = '';
