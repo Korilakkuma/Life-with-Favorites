@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&amp;display=swap" type="text/css" media="all" />
     <link rel="stylesheet" href="app.css" type="text/css" media="all" />
     <script type="application/ld+json">
     {
@@ -83,11 +83,11 @@
         <ul class="portfolios">
           <li>
             <h3><a href="https://xsound.jp" target="_blank" rel="noopener noreferrer">XSound</a></h3>
-            <iframe src="https://www.youtube.com/embed/QBe7FkidrUc?si=4URMcL4e7yHBclal" width="560" height="315" title="XSound | YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.youtube.com/embed/QBe7FkidrUc?si=4URMcL4e7yHBclal" width="560" height="315" title="XSound | YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="border: none;" allowfullscreen></iframe>
           </li>
           <li>
             <h3><a href="https://xsound.app" target="_blank" rel="noopener noreferrer">XSound.app</a></h3>
-            <iframe src="https://www.youtube.com/embed/XrNb8vJjYuU?si=RRa8Dt0kjzcPHshT" width="560" height="315" title="XSound.app | YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.youtube.com/embed/XrNb8vJjYuU?si=RRa8Dt0kjzcPHshT" width="560" height="315" title="XSound.app | YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" loading="lazy" style="border: none;" allowfullscreen></iframe>
           </li>
           <li>
             <h3><a href="https://korilakkuma.github.io/MyLibrary/" target="_blank" rel="noopener noreferrer">My Library</a></h3>
@@ -111,7 +111,7 @@
             <dt><label for="text-subject">メール件名</label><span id="number-of-subject-chars">0</span><span>文字入力</span></dt>
             <dd><input type="text" id="text-subject" placeholder="メール件名を入力してください (50 文字以内)" /></dd>
             <dt><label for="email">メールアドレス</label></dt>
-            <dd><input type="email" id="email" placeholder="メールアドレスを入力してください (任意)" /></dd>
+            <dd><input type="email" id="email" inputmode="email" placeholder="メールアドレスを入力してください (任意)" /></dd>
             <dt><label for="textarea-body">メール本文</label><span id="number-of-body-chars">0</span><span>文字入力</span></dt>
             <dd><textarea id="textarea-body" placeholder="メール本文を入力してください (1000 文字以内)"></textarea></dd>
           </dl>
@@ -139,6 +139,6 @@
       <p>2015 年 3 月 22 日から <span id="elapsed-days-from-2015/03/22"></span> 日が経過しました.</p>
       <small>Copyright (c) 2011 - <span id="current-year"></span> Tomohiro IKEDA</small>
     </footer>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
   </body>
 </html>
