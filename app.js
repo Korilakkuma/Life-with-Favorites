@@ -101,7 +101,7 @@ formElement.addEventListener('submit', async (event) => {
 
   buttonElement.setAttribute('disabled', 'disabled');
 
-  const response = await fetch('https://weblike-curtaincall.ssl-lolipop.jp/php/bootstrap.php?mode=contact', { method: 'POST', body: params });
+  const response = await fetch('https://weblike-curtaincall.ssl-lolipop.jp/php/contact.php', { method: 'POST', body: params, mode: 'cors' });
 
   divElement.textContent = '';
 
