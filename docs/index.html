@@ -103,18 +103,14 @@
       </section>
       <section>
         <h2>Contact</h2>
-        <p>
-          当サイトやポートフォリオに関する感想・お問い合わせなどをいただける場合は, 下記フォームから送信してください.
-          返信を必要とする場合は, メールアドレスを入力してください.
-        </p>
         <form id="form">
           <noscript>JavaScript を有効にしてください.</noscript>
           <dl>
-            <dt><label for="text-subject">メール件名</label><span id="number-of-subject-chars">0</span><span>文字入力</span></dt>
+            <dt><label for="text-subject">(必須) メール件名</label><span id="number-of-subject-chars">0</span><span>文字入力</span></dt>
             <dd><input type="text" id="text-subject" placeholder="メール件名を入力してください (50 文字以内)" /></dd>
-            <dt><label for="email">メールアドレス</label></dt>
-            <dd><input type="email" id="email" inputmode="email" placeholder="メールアドレスを入力してください (任意)" /></dd>
-            <dt><label for="textarea-body">メール本文</label><span id="number-of-body-chars">0</span><span>文字入力</span></dt>
+            <dt><label for="email">(任意) メールアドレス</label></dt>
+            <dd><input type="email" id="email" inputmode="email" placeholder="メールアドレスを入力してください" /></dd>
+            <dt><label for="textarea-body">(必須) メール本文</label><span id="number-of-body-chars">0</span><span>文字入力</span></dt>
             <dd><textarea id="textarea-body" placeholder="メール本文を入力してください (1000 文字以内)"></textarea></dd>
           </dl>
           <button type="submit" id="submit-button">送信する</button>
