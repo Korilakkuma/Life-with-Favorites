@@ -112,12 +112,22 @@ header h2 {
 
 .content-links {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 12px;
   align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media (width <= 480px) {
+  .content-links {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .content-links > li:nth-of-type(2) {
+    display: none;
+  }
 }
 
 main > section:nth-of-type(odd),
