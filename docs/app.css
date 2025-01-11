@@ -120,6 +120,16 @@ header h2 {
   list-style: none;
 }
 
+@media (width <= 480px) {
+  .content-links {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .content-links > li:nth-of-type(2) {
+    display: none;
+  }
+}
+
 main > section:nth-of-type(odd),
 main > article {
   color: var(--white);
