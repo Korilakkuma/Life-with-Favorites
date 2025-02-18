@@ -5,13 +5,13 @@
     "node": ">=20.0.0 <=22.14.x"
   },
   "description": "",
-  "main": "docs/index.html",
+  "main": "index.html",
   "scripts": {
-    "lint:css": "stylelint 'docs/**/*.css'",
-    "lint:html": "markuplint docs/index.html",
+    "lint:css": "stylelint './**/*.css'",
+    "lint:html": "markuplint index.html",
     "lint": "run-p lint:css lint:html",
-    "fix:css": "stylelint --fix 'docs/**/*.css'",
-    "fix:html": "markuplint --fix docs/index.html",
+    "fix:css": "stylelint --fix './**/*.css'",
+    "fix:html": "markuplint --fix index.html",
     "fix": "run-p fix:css fix:html"
   },
   "husky": {
@@ -20,7 +20,7 @@
     }
   },
   "lint-staged": {
-    "src/**/*.css": [
+    "./**/*.css": [
       "stylelint --fix"
     ],
     "index.html": [
