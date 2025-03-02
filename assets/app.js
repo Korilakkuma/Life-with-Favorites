@@ -22,6 +22,12 @@ const escapeHTML = (html) => {
 };
 
 inputElement.addEventListener('input', (event) => {
+  const divElement = document.getElementById('result');
+
+  if (divElement) {
+    formElement.removeChild(divElement);
+  }
+
   const numberOfChars = event.currentTarget.value.trim().length;
 
   spanElementForSubject.textContent = numberOfChars;
@@ -33,7 +39,21 @@ inputElement.addEventListener('input', (event) => {
   }
 });
 
+emailElement.addEventListener('input', (event) => {
+  const divElement = document.getElementById('result');
+
+  if (divElement) {
+    formElement.removeChild(divElement);
+  }
+});
+
 textareaElement.addEventListener('input', (event) => {
+  const divElement = document.getElementById('result');
+
+  if (divElement) {
+    formElement.removeChild(divElement);
+  }
+
   const numberOfChars = event.currentTarget.value.trim().length;
 
   spanElementForBody.textContent = numberOfChars;
