@@ -1,0 +1,31 @@
+{
+  "name": "Life-with-Favorites",
+  "short_name": "Life-with-Favorites",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#fafafa",
+  "theme_color": "#ff1493"
+}
