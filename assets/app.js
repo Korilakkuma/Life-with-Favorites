@@ -117,7 +117,7 @@ formElement.addEventListener('submit', async (event) => {
   const params = new URLSearchParams();
 
   params.append('subject', subject);
-  params.append('body', `${body}\n\nEmail: ${email}`);
+  params.append('body', `${body}\n\nEmail: ${email}\n\nReferrer: ${document.referrer}\n\nUser-Agent: ${navigator.userAgent}`);
 
   buttonElement.setAttribute('disabled', 'disabled');
 
