@@ -1,6 +1,6 @@
 const worker = globalThis.self;
 
-const CACHE_VERSION = '0.0.1';
+const CACHE_VERSION = '0.0.2';
 const CACHE_NAME = `life-with-favorites-cache-v${CACHE_VERSION}`;
 
 const BASE_URL = '/';
