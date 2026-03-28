@@ -12,6 +12,7 @@ const spanElementForBody    = document.getElementById('number-of-body-chars');
 const spanElementForElapsedDaysFrom20150322 = document.getElementById('elapsed-days-from-2015/03/22');
 const spanElementForCurrentYear = document.getElementById('current-year');
 
+const anchorElementToDoc     = document.querySelector('a[href="https://korilakkuma.github.io/Web-Music-Documentation/"]');
 const anchorElementToYouTube = document.querySelector('a[href="https://www.youtube.com/@rilakkuma3xjapan/videos"]');
 
 const escapeHTML = (html) => {
@@ -146,6 +147,7 @@ formElement.addEventListener('submit', async (event) => {
 });
 
 if (window.matchMedia('(max-width: 480px)').matches) {
+  anchorElementToDoc.setAttribute('href', 'https://github.com/Korilakkuma/Web-Music-Documentation');
   anchorElementToYouTube.setAttribute('href', 'https://m.youtube.com/@rilakkuma3xjapan/videos');
 }
 
