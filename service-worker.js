@@ -18,6 +18,11 @@ worker.addEventListener('install', (event) => {
 });
 
 worker.addEventListener('fetch', (event) => {
+  if (event.request.url.startsWith('http://')) {
+    // Not cache ...
+    return;
+  }
+
   if (
     !CACHE_FILES.some((file) => event.request.url.includes(file)) &&
     !event.request.url.startsWith('http') &&
