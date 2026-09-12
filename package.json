@@ -7,6 +7,9 @@
   "description": "",
   "main": "index.html",
   "type": "module",
+  "allowScripts": {
+    "husky": true
+  },
   "scripts": {
     "lint:css": "stylelint 'assets/**/*.css'",
     "lint:html": "markuplint index.html",
