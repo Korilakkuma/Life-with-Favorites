@@ -6,7 +6,7 @@
     {
       "selector": "html",
       "rules": {
-        "invalid-attr": {
+        "no-unknown-attr": {
           "options": {
             "allowAttrs": ["prefix"]
           }
